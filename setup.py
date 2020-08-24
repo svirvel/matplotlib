@@ -7,7 +7,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-filename = path.join(here, 'kivy_garden', 'flower', '_version.py')
+filename = path.join(here, 'kivy_garden', 'matplotlib', '_version.py')
 # change this                              ^^^^^^
 locals = {}
 with open(filename, "rb") as fh:
@@ -17,12 +17,12 @@ __version__ = locals['__version__']
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-URL = 'https://github.com/kivy-garden/flower'
+URL = 'https://github.com/kivy-garden/matplotlib'
 
 setup(
-    name='kivy_garden.flower',
+    name='kivy_garden.matplotlib',
     version=__version__,
-    description='A kivy garden flower demo.',
+    description='A kivy garden matplotlib demo.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url=URL,

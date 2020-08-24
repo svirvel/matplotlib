@@ -253,8 +253,8 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.mathtext import MathTextParser
 from matplotlib import rcParams
 from hashlib import md5
-from matplotlib import _png
-from matplotlib import _path
+#from matplotlib import _png
+#from matplotlib import _path
 
 try:
     import kivy
@@ -802,7 +802,7 @@ class RendererKivy(RendererBase):
 
     def points_to_pixels(self, points):
         return points / 72.0 * self.dpi
-		
+
     def weight_as_number(self, weight):
         ''' Replaces the deprecated matplotlib function of the same name
         '''
